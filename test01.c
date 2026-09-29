@@ -12,15 +12,15 @@ typedef struct {
     double avr;
 } student;
 
-int main(void) 
+int main() 
 {
     int n;
-    printf("ÇëÊäÈëÒª¹ÜÀíµÄÈËÊı£º");
+    printf("è¯·è¾“å…¥è¦ç®¡ç†çš„äººæ•°ï¼š");
     scanf("%d", &n);
 
     if (n < 1 || n > 10) 
     {
-        printf("ÈËÊı³¬³ö·¶Î§\n");
+        printf("äººæ•°è¶…å‡ºèŒƒå›´\n");
         return 0;
     }
 
@@ -47,7 +47,7 @@ int main(void)
         }
     }
 
-    printf("ÕâÊÇÅÅĞòºó\n");
+    printf("è¿™æ˜¯æ’åºå\n");
     for (int l = 0; l < n; l++) 
     {
         printf("%s %s %.2lf %.2lf %.2lf %.2lf %.2lf\n", (p + l)->id, (p + l)->name, (p + l)->score1, (p + l)->score2, (p + l)->score3, (p + l)->sum, (p + l)->avr);
@@ -55,12 +55,12 @@ int main(void)
     
     while (1)
     {
-        printf("\nÇëÊäÈëÒª²éÕÒµÄÑ§ºÅ");
+        printf("\nè¯·è¾“å…¥è¦æŸ¥æ‰¾çš„å­¦å·");
         char search[20];
         scanf("%s", search);
         if (strcmp(search, "!") == 0)
         {
-            printf("²éÕÒ½áÊø¡£\n");
+            printf("æŸ¥æ‰¾ç»“æŸã€‚\n");
             break;
         }
 
@@ -77,7 +77,7 @@ int main(void)
 
         if (!found) 
         {
-            printf("Î´ÕÒµ½¸ÃÑ§Éú\n");
+            printf("æœªæ‰¾åˆ°è¯¥å­¦ç”Ÿ\n");
         }
         
     }
